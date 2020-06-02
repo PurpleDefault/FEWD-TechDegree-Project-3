@@ -4,3 +4,62 @@
   margin: 0;
   padding: 0;
 }
+
+/* BASE STYLES */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* REPEATED STYLES */
+
+header h1, #sign_up {
+  text-align: center;
+}
+
+#sign_up, #border, #main_form h2 {
+  margin: auto;
+  width: 90%;
+}
+
+#sign_up h2, header, #main_form h2 {
+  font-family: 'Roboto Slab', serif;
+}
+
+/* HEADER STYLES */
+header {
+  background-color: #2D3945;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+header h1 {
+  padding: 2.5rem;
+}
+
+/* SIGN-UP STYLES */
+
+#sign_up {
+  padding: 3.5rem 2.25rem;
+  border-bottom: 0.5rem solid black;
+}
+
+#border {
+  margin-top: 0.25rem;
+  border-bottom: 0.25rem solid black;
+}
+
+#sign_up h2 {
+  font-size: 1.75rem;
+}
+
+#sign_up p {
+  color: grey;
+  padding-top: 1rem;
+  font-size: 1.25rem;
+}
+
+/* MAIN FORM STYLES */
+
+#main_form h2 {
+  padding: 1.25rem 0;
+}
