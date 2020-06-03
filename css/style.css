@@ -16,6 +16,16 @@ fieldset {
   padding: 0;
 }
 
+legend {
+  display: none;
+}
+
+.form_fields input:focus, textarea:focus {
+  border-bottom: 5px solid #4EBBB5;
+  transition-duration: 0.25s;
+  outline: none;
+}
+
 /* FLEXBOX */
 
 .form_fields {
@@ -88,6 +98,7 @@ header h1 {
   font-size: 1.25rem;
   background-color: #EFF0F1;
   padding: 1.5rem 1.75rem;
+  border-radius: 5px;
   border: none;
 }
 
@@ -105,6 +116,14 @@ textarea {
 #user_contact_info {
   padding-bottom: 2.5rem;
   border-bottom: 0.25rem solid black;
+}
+
+#f_name, #email {
+  text-align: right;
+}
+
+#f_name:focus, #email:focus {
+  text-align: left;
 }
 
 /* NEWSLETTER STYLES */
@@ -144,11 +163,48 @@ textarea {
   border: none;
   border-radius: 5px;
   width: 100%;
+  cursor: pointer;
+  transition-duration: 0.25s;
+}
+
+#submit_form:hover {
+  border-top: 5px solid #4EBBB5;
+  border-left: 5px solid #4EBBB5;
+  background-color: #3D918D;
 }
 
 /* FOOTER BUTTON */
 
-  footer {
-    padding: 2rem;
-    color: grey;
+footer {
+  padding: 2rem;
+  color: grey;
+}
+
+@media (min-width: 768px) {
+  #sign_up, #border, #main_form h2, .contact_info {
+    max-width: 768px;
   }
+
+  .form_fields {
+    flex-direction: row;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+  }
+
+  .form_fields label {
+    flex-basis: 30%;
+  }
+
+  .form_fields input, .form_fields select {
+    flex-grow: 1;
+  }
+
+  #zip_input {
+    justify-content: flex-start;
+  }
+
+  #zip {
+    width: 35%;
+    flex-grow: 0;
+  }
+}
