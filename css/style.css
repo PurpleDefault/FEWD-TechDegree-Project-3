@@ -17,7 +17,8 @@ fieldset {
 }
 
 legend {
-  display: none;
+  padding: 2rem 0;
+  font-size: 1.75rem;
 }
 
 .form_fields input:focus, textarea:focus {
@@ -44,13 +45,13 @@ header h1, #sign_up, footer {
   width: 90%;
 }
 
-#sign_up h2, header, #main_form h2, #submit_form {
+#sign_up h2, header, #main_form h2, #submit_form, legend {
   font-family: 'Roboto Slab', serif;
 }
 
 /* HEADER STYLES */
 header {
-  background-color: #2D3945;
+  background-color: steelblue;
   text-transform: uppercase;
   color: #FFFFFF;
 }
@@ -149,8 +150,13 @@ textarea {
   margin: 2.5rem 0;
 }
 
-#comments p {
-  margin-bottom: 1rem;
+#comments textarea {
+  margin-top: 1rem;
+}
+
+#comments label {
+  font-size: 1.25rem;
+  color: grey;
 }
 
 /* SUBMIT BUTTON */

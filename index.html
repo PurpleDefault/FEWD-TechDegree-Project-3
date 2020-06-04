@@ -20,10 +20,9 @@
     <div id="border"></div>
 <!--  -->
     <section id="main_form">
-      <h2>Contact Information</h2>
       <form class="contact_info" action="none" method="post">
         <fieldset id="user_contact_info">
-          <legend>Personal Information:</legend>
+          <legend>Contact Information</legend>
           <!--  -->
           <div class="form_fields">
             <label for="f_name">Full Name</label>
@@ -37,17 +36,17 @@
           <!--  -->
           <div class="form_fields">
             <label for="phone">Phone Number</label>
-            <input id="phone" type="tel" name="phone">
+            <input id="phone" type="tel" name="phone" placeholder="(541) 754-3010">
           </div>
           <!--  -->
           <div class="form_fields">
             <label for="address">Street Address</label>
-            <input id="address" type="text" name="address">
+            <input id="address" type="text" name="address" placeholder="1600 Pennsylvania Ave">
           </div>
           <!--  -->
           <div class="form_fields">
             <label for="city">City</label>
-            <input id="city" type="text" name="city">
+            <input id="city" type="text" name="city" placeholder="Washington DC">
           </div>
           <!--  -->
           <div class="form_fields">
@@ -109,13 +108,12 @@
           <!--  -->
           <div id="zip_input" class="form_fields">
             <label for="zip">Zip Code</label>
-            <input id="zip" type="text" name="zip">
+            <input id="zip" type="text" name="zip" placeholder="90210">
           </div>
         </fieldset>
         <!--  -->
         <fieldset id="newsletter">
-          <legend>Newsletter Settings:</legend>
-          <h2>Newsletter</h2>
+          <legend>Newsletter</legend>
           <p>Select the newsletters you would like to recieve.</p>
           <!--  -->
           <div class="news_inputs">
@@ -146,8 +144,8 @@
           </div>
           <!--  -->
           <section id="comments">
-            <p>Other topics you would like to hear about:</p>
-            <textarea name="other"></textarea>
+            <label for="other_topics">Other topics you would like to hear about:</label>
+            <textarea id="other_topics" name="other"></textarea>
           </section>
 
           <input id="submit_form" type="submit" name="submit" value="Sign Up">
